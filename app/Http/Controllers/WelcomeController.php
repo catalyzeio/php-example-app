@@ -40,6 +40,9 @@ class WelcomeController extends Controller {
 	 */
 	public function database()
 	{
+
+		echo($_SERVER['REMOTE_ADDR']);
+
 		return view('database');
 	}
 

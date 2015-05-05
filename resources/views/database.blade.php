@@ -39,7 +39,7 @@
 
 			}
 			.dblist table {
-				width: 100%
+				width: 100%;
 			}
 		</style>
 	</head>
