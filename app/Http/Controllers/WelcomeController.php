@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Visitor;
+
 class WelcomeController extends Controller {
 
 	/*
@@ -40,10 +42,16 @@ class WelcomeController extends Controller {
 	 */
 	public function database()
 	{
+		// Add new Visitor to the db
+		$visitor = new Visitor();
+		$visitor->addVisitor();
 
-		echo($_SERVER['REMOTE_ADDR']);
+		// Lets get the recent Visitors
+		$visitors = $visitor->listLastVisitors();
+		$data = array();
+		$data['visitors'] = $visitors;
 
-		return view('database');
+		return view('database', $data);
 	}
 
 }
