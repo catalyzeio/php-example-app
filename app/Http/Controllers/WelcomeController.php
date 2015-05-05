@@ -33,4 +33,14 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+	/**
+	 * Show the database connection demo to the user.
+	 *
+	 * @return Response
+	 */
+	public function database()
+	{
+		return view('database');
+	}
+
 }
