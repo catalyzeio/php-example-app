@@ -33,8 +33,8 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ secure_url('/') }}">Hello World</a></li>
-					<li><a href="{{ secure_url('/database') }}">Database Test</a></li>
+					<li><a href="/">Hello World</a></li>
+					<li><a href="/database">Database Test</a></li>
 				</ul>
 			</div>
 		</div>
