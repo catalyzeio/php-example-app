@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Visitor;
+use Log;
 
 class WelcomeController extends Controller {
 
@@ -32,6 +33,21 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
+		// Logging Example
+		Log::info('This is some useful information.');
+
+		Log::warning('Something could be going wrong.');
+
+		Log::error('Something is really going wrong.');
+
+		Log::debug('This is debig information');
+
+		Log::notice('This is a notice.');
+
+		Log::critical('Something has gone critical within the application!');
+
+		Log::alert('this is an alert.');
+
 		return view('welcome');
 	}
 
